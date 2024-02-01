@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo-alura" src="./assets/Logo.png" alt="logo alura">
+    
+        <h1>Challenge Encriptador - G6</h1>
+    </header>
+    <main class="contenedor-principal">
+        <section class="seccion-encriptacion">
+
+            <textarea class="caja-texto texto-sin-encriptar" 
+                name="" 
+                id="texto"
+                placeholder="Ingrese el texto aquí"
+                ></textarea>
+
+            <div>
+                <p style="display: flex; align-items: center;">
+                    <span class="material-icons" style="margin-right: 5px;">
+                    info
+                    </span> Solo letras minúsculas y sin acentos
+                </p>
+                <div class="botones-encriptacion">
+                    <button onclick="encriptar()" class="boton" style="background-color: #0A3871; color: white;">ENCRIPTAR</button>
+                    <button onclick="desencriptar()" class="boton" style="background-color: #00000000; color: #0A3871;">DESENCRIPTAR</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="seccion-desencriptacion">
+            <div class="texto-resultado ocultar">            
+                <p class="caja-texto resultado">
+                </p>
+
+                <div class="botones-desencriptacion">
+                    <button onclick="copiarAlPortapapeles()" class="boton" style="background-color: white; color: #0A3871;">COPIAR</button>
+                </div>
+            </div>
+
+            <div class="texto-vacio">
+                <img src="./assets/persona.png" alt="persona">
+                <h3>Ningun mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
